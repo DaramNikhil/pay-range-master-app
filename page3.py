@@ -10,7 +10,7 @@ def perform_calculation(selected_approach, df):
     if selected_approach == "Market Rate Calculations":
         result_df = market_rates_calculations.calculate(df)
     elif selected_approach == "Employee Pay Calculations":
-        result_df = employee_pay_calculations.calculate(df)
+        result_df = employee_pay_calculations.analyze_salary_distribution(df)
     elif selected_approach == "Combination Strategy Calculations":
         result_df = combination_strategy_calculations.calculate(df)
     else:

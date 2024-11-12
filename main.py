@@ -225,7 +225,7 @@ def main():
     elif st.session_state.page == 'page3' and st.session_state.logged_in:
         page3.show()
     elif st.session_state.page == 'page4' and st.session_state.logged_in:
-        page4.show()
+        page4.show_page5()
 
 # Run main function
 if __name__ == "__main__":
